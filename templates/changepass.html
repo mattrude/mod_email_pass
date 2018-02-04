@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Reset your XMPP account password</title>
+  </head>
+  <body>
+    <div id="estilo" class="formulario">
+      <h1>Reset your XMPP account password</h1>
+      <form action="{path}" method="POST">
+		<p class="error">{notice}</p>
+		<label>
+		Username:
+		<span class="small">Enter your username (JID)</span>
+		</label>
+		<input type="text" name="username" required>@{hostname}
+		<div class="spacer"></div>
+		<label>
+		Email:
+		<span class="small">Enter your email</span>
+		</label>
+		<input type="text" name="email" required>
+		<div class="spacer"></div>
+
+		<input id="button" class="button" type="submit" value="Submit">
+		<div class="spacer"></div>
+      </form>
+      <p>When clicking on the button, a link will be sent to the email address that appears on your vCard in which you must enter.</p>
+    </div>
+  </body>
+</html>
